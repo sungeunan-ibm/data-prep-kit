@@ -46,7 +46,7 @@ class HtmlToParquetTransform(AbstractTableTransform):
                             content_string = trafilatura.extract(content_bytes)
                             print("content_string:", content_string)
                             row_data = {
-                                "title": member.filename,
+                                "filename": member.filename,
                                 "contents": content_string
                             }
 
